@@ -103,3 +103,25 @@ li{
     margin-top: 50px;
     text-align: center;
 }
+
+.publicidad
+{
+    color: #025157;
+}
+
+.publicidadSection, .publicidadSection > form
+{
+    display: flex;
+}
+
+.features
+{
+    height: 660px;
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+}
+
+.features
+{
+
+}
