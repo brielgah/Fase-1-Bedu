@@ -8,30 +8,44 @@
       content="width=device-width,initial-scale=1.0,user-scalable=no"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <title>Matcha</title>
   </head>
   <body>
-    <header class="header">
-      <!-- Logo con link a la página principal -->
-      <a class="logo">
-        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" class="logo"/>
-      </a>
-      <!-- Menú de navegación -->
-      <nav class="navbar">
-        <ul>
-          <li>Platform</li>
-          <li>Pricing</li>
-          <li>Customers</li>
-          <li>Resources</li>
-          <li>About</li>
-        </ul>
-      </nav>
-      <!-- Contenedor de acciones de usuario -->
-      <div class="actions">
-        <a class="signIn">Sign in</a>
-        <button class="freeTrial">Start a free trial</button>
+    <nav class="navbar navbar-expand-xxl navbar-light" style="background-color: #fffbf7;">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="actions">
+          <a href="#">Sign In</a>
+          <button>Start Free Trial</button>
+        </div>
       </div>
-    </header>
+    </nav>
     <section class="main">
       <h1>
         Build your blog. Build your business.
@@ -73,7 +87,7 @@
           <p>
             Start publishing today:
           </p>
-          <form class="formPublish">
+          <form>
             <input type="email" placeholder="Enter email" />
             <button>Start my trial</button>
           </form>
@@ -203,6 +217,71 @@
           <button>See case study</button>
         </article>
       </article>
+    </section>
+    <section class="matchaWork">
+      <article class="workContent">
+        <h1>How does Matcha wok?</h1>
+        <p>Your blog can be so much more than window dressing. Use Matcha’s <span>simple formula</span> to transform your blog into an ecommerce growth engine.</p>
+        <button>Explore the Platform</button>
+      </article>
+      <section class="workCards">
+        <article class="workCard">
+          <figure>
+            <img src="https://image.shutterstock.com/image-vector/textbook-publish-online-electronic-paper-260nw-1059585068.jpg">
+          </figure>
+          <h1>
+            Publish
+          </h1>
+          <p>
+            Effortlessly fill your blog with content that shoppers want to read.
+          </p>
+          <a>
+          Publish instantly &rarr;
+          </a>
+        </article>
+        <article class="workCard">
+          <figure>
+            <img src="https://www.repricerexpress.com/wp-content/uploads/2018/03/businessman-megaphone.png">
+          </figure>
+          <h1>
+            Promote
+          </h1>
+          <p>
+            Use articles in email, social, and content ads to attract more site visitors.
+          </p>
+          <a>
+            Drrive morer site visitors &rarr;
+          </a>
+        </article>
+        <article class="workCard">
+          <figure>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.allbusiness.com%2Fasset%2F2017%2F05%2Fattract-employee.jpg&f=1&nofb=1">
+          </figure>
+          <h1>
+            Capture
+          </h1>
+          <p>
+            Turn readers into email subscribers and subscribers into customers.
+          </p>
+          <a>
+            Grow your email list &rarr;
+          </a>
+        </article>
+        <article class="workCard">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1611077544066-4522a88996aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lYXN1cmVtZW50fGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+          </figure>
+          <h1>
+            Measure
+          </h1>
+          <p>
+            See what’s working and what’s not to easily optimize for more traffic, email subscribers, and sales.
+          </p>
+          <a>
+            Track performance &rarr;
+          </a>
+        </article>
+      </section>
     </section>
   </body>
 </html>

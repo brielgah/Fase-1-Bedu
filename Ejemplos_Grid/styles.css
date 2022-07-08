@@ -1,4 +1,4 @@
-/* main{
+main{
     width: 100%;
     height: 100%;
     background-color: wheat;
@@ -11,19 +11,21 @@
 
 .box1{
     background-color: aliceblue;
-    grid-row: 1/3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .box2{
     background-color: aquamarine;
-    grid-row: 2/4;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .box3{
     background-color: blueviolet;
-} */
+}
 
-main{
+/* main{
     width: 100%;
     height: 100%;
     background-color: wheat;
@@ -51,4 +53,4 @@ main{
 .box3{
     background-color: blueviolet;
     grid-area: b3;
-}
+} */

@@ -17,17 +17,17 @@ h4{
     margin-bottom: 30px;
 }
 
+form{
+    height: 55px;
+}
+
 input{
     border: 1px solid #b6b6b6;
-    padding: 6px 20px;
+    padding: 0px 20px;
     width: 60%;
     max-width: 250px;
     border-radius: 14px 0 0 14px;
     height: 100%;
-}
-
-form{
-    height: 55px;
 }
 
 button{
@@ -37,10 +37,6 @@ button{
     padding: 6px 20px;
     margin-left: -10px;
     border-radius: 0 14px 14px 0;
-    height: 100%;
-}
-
-input button{
     height: 100%;
 }
 
@@ -75,6 +71,8 @@ header > *{
     left: 0;
     right: 0;
     background-color: #fffbf7;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
 .navbar{
@@ -95,10 +93,11 @@ header > *{
 }
 
 .actions{
-    width: 15%;
+    display: flex;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
+    align-items: center;
 }
 
 .actions > *{
@@ -170,6 +169,7 @@ header > *{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .videoPublish > img{
@@ -182,7 +182,7 @@ header > *{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    padding: 3rem 0;
 }
 
 .textStories{
@@ -224,21 +224,19 @@ header > *{
 }
 
 .peopleStories{
-    width: fit-content;
+    width: 400px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
 .peopleStories > figure{
-    height: 13vw;
     margin: 0;
     width: 100%;
 }
 
 .peopleStories > figure img{
     border-radius: 10px 10px 0 0;
-    height: 100%;
     width: 100%;
 }
 
@@ -246,6 +244,7 @@ header > *{
     background-color: #fff;
     height: 100%;
     width: 100%;
+    margin: -6px 0;
     border-radius: 0 0 10px 10px;
 }
 
@@ -287,7 +286,7 @@ header > *{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 200px;
+    top: 400px;
     right: 20px;
     width: 75px;
     height: 75px;
@@ -302,8 +301,10 @@ header > *{
     display: grid;
     grid-template: repeat(2,1fr) / repeat(2,1fr);
     background-color: #025157;
-    padding: 5% 10%;
     grid-gap: 2rem;
+    max-width: 100%;
+    padding: 5% 10%;
+    height: fit-content;
 }
 
 .feature-card{
@@ -348,4 +349,278 @@ header > *{
     height: 100%;
 }
 
+.matchaWork{
+    display: flex;
+    flex-direction: column;
+    background-color: #fffbf7;
+    align-items: center;
+    padding: 0rem 3rem 3rem;
+    max-width: 100%;
+}
 
+.workContent{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.workContent span{
+    color:#67b54b;
+}
+
+.workContent button{
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px 12px 6px 12px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.workCards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    width: 75%;
+    grid-gap: 2rem;
+}
+
+.workCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    padding: 0 2rem;
+}
+
+.workCard figure{
+    width: 100%;
+    align-self: center;
+    margin-bottom: 0;
+    height: 40%;
+}
+
+.workCard > figure img{
+    width: 100%;
+}
+
+.workCard h1{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+}
+
+.workCard p{
+    margin-bottom: 3rem;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+}
+
+.workCard a{
+    margin-bottom: 3rem;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .actions,.navbar{
+        display: none;
+    }
+
+    .logo{
+        width: 50px !important;
+    }
+
+    .header{
+        padding-top: 1rem;
+    }
+
+    .main{
+        margin-top: 100px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+
+    form{
+        height: 35px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    form input{
+        max-height: 100%;
+    }
+
+    .capterra{
+        width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .example{
+        width: 90%;
+    }
+
+    .features{
+        grid-template: repeat(4,1fr) / repeat(1,1fr);
+    }
+
+    .stories{
+        flex-direction: column;
+    }
+
+    .textStories{
+        width: 75%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textStories button{
+        margin-top: 1rem;
+    }
+
+    .textStories img{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .workCards{
+        grid-template: repeat(4,1fr) / repeat(1,1fr);
+    }
+
+    .workContent{
+        width: 75%;
+    }
+  }
+  
+  /** dispositivos pequeños en vista landscape (horizontal) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .promo{
+        flex-direction: column;
+        width: 95%;
+        margin: 3rem 0;
+        align-items: center;
+    }
+
+    .videoPublish video{
+        max-width: 100%;
+    }
+
+    .publish h3{
+        margin-bottom: 1rem;
+    }
+
+    .publish div form{
+        margin-top: 1rem;
+    }
+
+    .features{
+        grid-template: repeat(4,1fr) / repeat(1,1fr);
+    }
+
+    .stories{
+        flex-direction: column;
+    }
+
+    .textStories{
+        width: 75%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textStories button{
+        margin-top: 1rem;
+    }
+
+    .textStories img{
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    .workCards{
+        grid-template: repeat(4,1fr) / repeat(1,1fr);
+    }
+
+    .workContent{
+        width: 75%;
+    }
+  }
+  
+  /** dispositivos medianos (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .promo{
+        flex-direction: column;
+        width: 95%;
+        margin: 3rem 0;
+        align-items: center;
+    }
+
+    .videoPublish video{
+        max-width: 100%;
+    }
+
+    .publish h3{
+        margin-bottom: 1rem;
+    }
+
+    .publish div form{
+        margin-top: 1rem;
+    }
+
+    .stories{
+        flex-direction: column;
+    }
+
+    .textStories{
+        width: 75%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .textStories img{
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    .textStories button{
+        margin-top: 1rem;
+    }
+
+    .workCards{
+        grid-template: repeat(4,1fr) / repeat(1,1fr);
+    }
+
+    
+  }
+  
+  /** dispositivos grandes (desktops) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .peopleStories{
+        width: 300px;
+    }
+
+    .logoStories{
+        top: 280px;
+    }
+  }
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+  @media (min-width: 1200px) {
+    
+  }
