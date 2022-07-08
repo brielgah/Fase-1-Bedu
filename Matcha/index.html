@@ -13,39 +13,39 @@
     <title>Matcha</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-xxl navbar-light" style="background-color: #fffbf7;">
-      <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">
-          <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Platform</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Customers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-          </ul>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #fffbf7;">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">
+            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Platform</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="actions">
+            <a href="#">Sign In</a>
+            <button>Start Free Trial</button>
+          </div>
         </div>
-        <div class="actions">
-          <a href="#">Sign In</a>
-          <button>Start Free Trial</button>
-        </div>
-      </div>
-    </nav>
+      </nav>
     <section class="main">
       <h1>
         Build your blog. Build your business.
@@ -204,18 +204,68 @@
         <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png">
       </article>
       <article class="peopleStories">
-        <figure>
-          <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png">
-        </figure>
-        <div class="logoStories">
-          <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png">
-        </div>
-        <article class="textPeople">
-          <h4>Everly</h4>
-          <h3>Early-Stage CPG Brand <br>Increases Lead Conversion 20x,<br> Ecommerce Revenue 20%</h3>
-          <p>+327% more popup conversions<br>at a 60% lower cost</p>
-          <button>See case study</button>
-        </article>
+        <section class="card-container">
+          <div id="carouselStories" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselStories" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselStories" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselStories" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure>
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png">
+                </figure>
+                <div class="logoStories">
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png">
+                </div>
+                <article class="textPeople">
+                  <h4>Everly</h4>
+                  <h3>Early-Stage CPG Brand <br>Increases Lead Conversion 20x,<br> Ecommerce Revenue 20%</h3>
+                  <p>22% of monthly revenue influenced by content</p>
+                  <button>See case study</button>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <figure>
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg">
+                </figure>
+                <div class="logoStories">
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png">
+                </div>
+                <article class="textPeople">
+                  <h4>Sea to Summit</h4>
+                  <h3>Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New Subscribers 820%</h3>
+                  <p>500% increase in traffic from social media</p>
+                  <button>See case study</button>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <figure>
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png">
+                </figure>
+                <div class="logoStories">
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png">
+                </div>
+                <article class="textPeople">
+                  <h4>Mambe Waterproof <br>Blankets</h4>
+                  <h3>How Mambe Increased Conversions by 327%, Reduced CPL by 60%</h3>
+                  <p>+327% more popup conversions<br>at a 60% lower cost</p>
+                  <button>See case study</button>
+                </article>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStories" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselStories" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        
       </article>
     </section>
     <section class="matchaWork">

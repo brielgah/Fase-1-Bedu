@@ -76,7 +76,7 @@ header > *{
 }
 
 .navbar{
-    width: 70%;
+    /* width: 70%; */
     text-align: center;
     color: #025157;
     font-weight: 500;
@@ -244,7 +244,7 @@ header > *{
     background-color: #fff;
     height: 100%;
     width: 100%;
-    margin: -6px 0;
+    margin: -16px 0;
     border-radius: 0 0 10px 10px;
 }
 
@@ -437,12 +437,24 @@ header > *{
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
+
+    .promo{
+        flex-direction: column;
+        width: 95%;
+        margin: 3rem 0;
+        align-items: center;
+    }
+
     .actions,.navbar{
         display: none;
     }
 
     .logo{
         width: 50px !important;
+    }
+
+    .logo img{
+        width: 100%;
     }
 
     .header{
@@ -616,7 +628,7 @@ header > *{
     }
 
     .logoStories{
-        top: 280px;
+        top: 400px;
     }
   }
   
