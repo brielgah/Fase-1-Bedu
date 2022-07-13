@@ -636,3 +636,7 @@ header > *{
   @media (min-width: 1200px) {
     
   }
+
+  .emailButton:hover{
+    background-color: #67b54b;
+  }
